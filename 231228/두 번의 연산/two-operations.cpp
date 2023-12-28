@@ -2,18 +2,18 @@
 using namespace std;
 
 int main() {
-    int a,res;
+    int a;
     
     cin >> a;
 
     if (a % 2 == 1){
-        res = a + 3;
+        a = a + 3;
     }
-    if(a % 2 == 1){
-        res = res / 3;
+    if(a % 3 == 0){
+        a = a / 3;
     }
     
-    cout << res;
+    cout << a;
 
     return 0;
 }
