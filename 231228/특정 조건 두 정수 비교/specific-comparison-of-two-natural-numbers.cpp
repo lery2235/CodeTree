@@ -10,13 +10,13 @@ int main() {
         cout << 1 << " ";
     }
     else 
-        cout << 0;
+        cout << 0 << " ";
 
     if(a == b){
         cout << 1 << " ";
     }
     else 
-        cout << 0;
+        cout << 0 << " ";
     
 
     return 0;
