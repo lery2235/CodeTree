@@ -4,18 +4,14 @@ int main() {
     int mid,end;
 
     cin >> mid >> end;
-    if(mid >= 90){
-       if(end >= 95){
-        cout << 10;
-       } 
-       else if(end >= 90){
-        cout << 5;
-       }
-       else
-        cout << 0;
+    
+    if(mid >= 90 && end > 95)
+        cout << "100000";
+    else if(mid >= 90 && end >= 90){
+        cout << "50000";
     }
     else
-        cout << 0;
+        cout << "0";
 
     return 0;
 }
