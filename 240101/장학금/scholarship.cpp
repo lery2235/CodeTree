@@ -5,7 +5,7 @@ int main() {
 
     cin >> mid >> end;
     
-    if(mid >= 90 && end > 95)
+    if(mid >= 90 && end >= 95)
         cout << "100000";
     else if(mid >= 90 && end >= 90){
         cout << "50000";
