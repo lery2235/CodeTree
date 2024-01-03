@@ -6,7 +6,7 @@ int main() {
     cin >> n;
     
     if(n >= 7){
-        if(n == 11){
+        if(n % 2 == 0){
             cout << 30;
         }
         else
@@ -16,13 +16,12 @@ int main() {
         if(n == 2){
             cout << 28;
         }
-        else if(n % 2 == 0){
+        else if(n % 2 == 1 || n == 1){
             cout << 30;
         }
         else 
             cout << 31;
     }
-
 
 
     return 0;
