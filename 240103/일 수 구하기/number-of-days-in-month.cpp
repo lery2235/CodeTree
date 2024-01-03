@@ -17,10 +17,10 @@ int main() {
             cout << 28;
         }
         else if(n % 2 == 1 || n == 1){
-            cout << 30;
+            cout << 31;
         }
         else 
-            cout << 31;
+            cout << 30;
     }
 
 
