@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
     int a, b, c;
-
+    Scanner sc = new Scanner(System.in);
     a = sc.nextInt();
     b = sc.nextInt();
     c = sc.nextInt();
@@ -23,12 +23,13 @@ public class Main {
     else
         if(c > b){
             System.out.println(b);
+        }
         else if(a > c){
             System.out.println(a);
         }
-        else
+        else{
             System.out.println(c);
     }
 
     }
-}
+    }
