@@ -6,10 +6,8 @@ int main() {
     std::cin >> n;
 
     while(n >= i){
-        if(i % 3 == 0){
-            std::cout << i << " ";
-        }
-        i += 1;
+        std::cout << i << " ";
+        i += 3;
     }
     
     return 0;
