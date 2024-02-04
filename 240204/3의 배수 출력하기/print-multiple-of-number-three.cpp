@@ -2,7 +2,7 @@
 
 int main() {
     int n;
-    int i = 1;
+    int i = 3;
     std::cin >> n;
 
     while(n >= i){
