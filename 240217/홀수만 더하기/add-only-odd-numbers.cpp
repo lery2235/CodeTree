@@ -7,7 +7,7 @@ int main() {
 
     for(int i = 0; i <= 100; i++){
         cin >> n;
-        if(n % 3 == 0){
+        if(n % 3 == 0 && n % 2 == 1){
             sum += n;
         }
     }
