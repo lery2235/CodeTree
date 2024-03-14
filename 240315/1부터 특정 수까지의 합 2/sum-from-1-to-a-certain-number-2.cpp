@@ -2,9 +2,9 @@
 using namespace std;
 
 
-void recursive(int n){
+int recursive(int n){
     if(n == 0){
-        return;
+        return 0;
     }
     return recursive(n - 1) + n;
 }
