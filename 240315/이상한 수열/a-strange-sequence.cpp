@@ -8,7 +8,7 @@ int f(int n){
     if(n == 2){
         return 2;
     }
-    return f(n / 3) + (n - 1) + 1;
+    return f(n / 3) + f(n - 1);
 }
 
 int main() {
