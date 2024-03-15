@@ -5,7 +5,7 @@ int f(int n, int max){
     int res; 
     cin >> res;
 
-    if(n == 1){
+    if(n == 0){
         return max;
     }
     
