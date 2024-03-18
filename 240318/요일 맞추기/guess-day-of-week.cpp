@@ -1,3 +1,8 @@
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
 int DateToDay(int month, int day, int target_month, int target_day) {
     int day_month[] = { 0, 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
     int res = 0;
