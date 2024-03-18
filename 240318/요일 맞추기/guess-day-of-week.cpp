@@ -33,7 +33,7 @@ int main() {
     }
 
     string day_of_week[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
-     cout << day_cal[diff % 7];
+     cout << day_of_week[day_cal % 7];
 
     return 0;
 }
