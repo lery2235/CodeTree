@@ -5,8 +5,7 @@ using namespace std;
 
 int DateToDay(int month, int day) {
     
-    int day_month[13] = { 0, 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
-   
+     int days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 31, 30, 31, 30};
     //현재 월 까지 일 수 더하기 계산 
     int res = 0;
     for (int i = 1; i < month; i++) {
