@@ -24,10 +24,15 @@ int main() {
     cin >> m1 >> d1 >> m2 >> d2;
     cin >> date[0];
 
-    int start_day = date_cal(m1, d1);
-    int end_day = date_cal(m2, d2);
+    int diff_day = date_cal(m2, d2) - date_cal(m1, d1);
+    
+    while (diff_day < 0) {
+        diff_day += 7;
+    }
 
-    for (int i = start_day; i <= end_day; i++) {
+    int start_day = date_cal(m1, d1) % 7;
+
+    for (int i = start_day; i <= diff_day + start_day; i++) {
         if (date[0] == day_of_week[i % 7]) {
             cnt++;
         }
