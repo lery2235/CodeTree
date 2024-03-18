@@ -20,7 +20,7 @@ int DateToDay(int month, int day) {
 
 
 int main() {
-    int m1, m2, d1, d2
+    int m1, m2, d1, d2;
 
     cin >> m1 >> d1 >> m2 >> d2;
 
