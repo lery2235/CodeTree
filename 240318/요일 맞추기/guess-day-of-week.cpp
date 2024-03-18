@@ -1,24 +1,23 @@
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
 int DateToDay(int month, int day, int target_month, int target_day) {
     int day_month[] = { 0, 31, 28, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 };
     int res = 0;
 
-    // 현재 월의 일 수에 현재 일자를 더하여 계산
+    // 현재 월의 총 일 수 계산
+    int total_days = 0;
     for (int i = 1; i < month; i++) {
-        day += day_month[i];
+        total_days += day_month[i];
     }
+    total_days += day;
 
-    // 대상 월의 일 수에 대상 일자를 더하여 계산
+    // 대상 월의 총 일 수 계산
+    int target_total_days = 0;
     for (int i = 1; i < target_month; i++) {
-        target_day += day_month[i];
+        target_total_days += day_month[i];
     }
+    target_total_days += target_day;
 
     // 대상 월의 총 일 수에서 현재 월의 총 일 수를 뺌
-    res = target_day - day;
+    res = target_total_days - total_days;
 
     return res;
 }
