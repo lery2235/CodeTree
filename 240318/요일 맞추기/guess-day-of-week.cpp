@@ -7,14 +7,14 @@ int DateToDay(int month, int day) {
     
      int days[13] = {0, 31, 28, 31, 30, 31, 30, 31, 31, 31, 30, 31, 30};
     //현재 월 까지 일 수 더하기 계산 
-    int res = 0;
-    for (int i = 1; i < month; i++) {
-        res += day_month[i];
-    }
-    // 일을 분으로 변경
-    res += day;
+    int total_days = 0;
     
-    return res;
+    for(int i = 1; i < m; i++)
+        total_days += days[i];
+    // 일을 분으로 변경
+     total_days += d;
+    
+    return total_days;
 }
 
 
