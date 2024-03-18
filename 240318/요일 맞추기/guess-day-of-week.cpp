@@ -22,7 +22,6 @@ int DateToDay(int month, int day) {
 int main() {
     int month, day, target_month, target_day;
 
-    string v[] = {"Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"};
 
     cin >> month >> day >> target_month>> target_day;
 
@@ -33,8 +32,8 @@ int main() {
         day_cal += 7;
     }
 
-    // 요일로 변환하여 출력
-    cout << v[day_cal % 7];
+    string day_of_week[] = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"};
+     cout << day_cal[diff % 7];
 
     return 0;
 }
