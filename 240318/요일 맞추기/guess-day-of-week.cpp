@@ -35,7 +35,7 @@ int DateToDay(int month, int day, int target_month, int target_day) {
 int main() {
     int month, day, target_month, target_day;
 
-    vector<string> v{"Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"};
+    string v[] = {"Mon", "Tue", "Wed", "Thr", "Fri", "Sat", "Sun"};
 
     cin >> month >> day >> target_month>> target_day;
 
