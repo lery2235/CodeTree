@@ -32,8 +32,8 @@ int main() {
 
     int start_day = date_cal(m1, d1) % 7;
 
-    for (int i = start_day; i <= diff_day + start_day; i++) {
-        if (date[0] == day_of_week[i % 7]) {
+    for (int i = start_day; i <= diff_day; i++) {
+        if (date[0] == day_of_week[(start_day + i) % 7]) {
             cnt++;
         }
         else {
