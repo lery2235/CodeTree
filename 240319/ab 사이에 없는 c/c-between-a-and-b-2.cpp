@@ -7,16 +7,16 @@ int main() {
     cin >> a >> b >> c;
 
     for(int i = a; i <= b; i++){
-        if(i % c != 0){
+        if(i % c == 0){
             flag = false;
         }
     }    
 
     if(flag == true){
-        cout << "NO";
+        cout << "YES";
     }
     else{
-        cout << "YES";
+        cout << "NO";
     }
     return 0;
 }
