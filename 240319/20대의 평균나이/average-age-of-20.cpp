@@ -10,17 +10,18 @@ int main() {
     while(1){
         int n;
         cin >> n;
+        
         if(n >= 30){
-            avg = (double)sum / cnt;
-            cout << fixed << setprecision(2) << avg; 
             break;
-            }
-        else{
-            sum += n;
-            cnt++;
-        }
+        }   
 
+        sum += n;
+        cnt++;
     }
+    avg = (double)sum / cnt;
+    cout << fixed << setprecision(2) << avg;
+
+
 
     return 0;
 }
