@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     int res = 0;
+    int temp = 0;
     int n;
     cin >> n;
     for (int i = 0; i < n; i++) {
@@ -10,15 +11,15 @@ int main() {
             for (int j = 1; j <= n; j++) {
                 cout << res + j << " ";
                 if (j == n) {
-                    res = j + n + 1;
+                    res = (res + j) + n;
                 }
             }
         }
         else {
-            for (int j = 1; j <= n; j++) {
+            for (int j = 0; j < n; j++) {
                 cout << res - j << " ";
-                if (j == n) {
-                    res = j + n;
+                if (j == n - 1) {
+                    res = (res - j) + n + 1 - 2;
                 }
             }
         }
