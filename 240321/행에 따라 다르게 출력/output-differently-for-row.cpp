@@ -20,7 +20,7 @@ int main() {
             for (int j = 0; j < n; j++){ 
                 cout << res + (j * 2) << " ";
                 if (n - 1 == j) {
-                    res = res + (j * 2) + 1;
+                    res = res + (j * 2);
                 }
             }
         }
