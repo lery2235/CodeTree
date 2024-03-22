@@ -1,5 +1,4 @@
 import sys
-sys.stdin = open("BasicES4.txt", "rt")
 
 def solution(n):
     arr = list(map(int, input().split()))
