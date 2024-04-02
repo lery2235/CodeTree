@@ -1,9 +1,11 @@
 n = int(input())
-n_list = list(map(int, input().split()))
-res = []
+num = list(map(int, input().split()))
+stack = []
 
-for i in range(len(n_list)):
-    if n_list[i] % 2 == 0:
-        res.append(n_list[i])
+for i in range(len(num)):
+    if num[i] % 2 == 0:
+        stack.append(num[i])
+    else:
+        stack.pop()
 
-print(''.join(map(str, reversed(res))))
+print(*stack)
