@@ -9,5 +9,5 @@ for i in range(len(n)):
     cnt += 1
 
 avg = 0.0
-avg = hap / cnt
+avg = hap // cnt
 print(hap, avg, end=' ')
