@@ -1,4 +1,7 @@
 hap = 0
-for i in range(10):
-    hap += i
+n = list(map(int,input().split()))
+
+for i in range(len(n)):
+    hap += n[i]
+
 print(hap)
