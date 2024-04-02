@@ -8,4 +8,5 @@ for i in range(len(num)):
     else:
         stack.pop()
 
+stack.sort()
 print(*stack)
