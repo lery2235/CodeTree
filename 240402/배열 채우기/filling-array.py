@@ -2,9 +2,11 @@ arr = list(map(int, input().split()))
 res = [0] * len(arr)
 for i in range(len(arr)):
     if arr[i] == 0:
-        res[:i+1] = reversed(arr[:i])
+        res[0:i] = reversed(arr[0:i])
+        break
     else:
-        res[0:i+1] = reversed(arr[0:i+1])
+        continue
+else:
+    res[:i+1] = arr[::-1]
 
-for i in res:
-    print(i, end =' ')
+print(*res[0:i])
