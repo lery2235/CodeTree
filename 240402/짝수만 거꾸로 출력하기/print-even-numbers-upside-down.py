@@ -6,7 +6,6 @@ for i in range(len(num)):
     if num[i] % 2 == 0:
         stack.append(num[i])
     else:
-        stack.pop()
+        continue
 
-stack.sort()
-print(*stack)
+print(*stack[::-1])
