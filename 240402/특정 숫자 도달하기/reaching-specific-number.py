@@ -9,5 +9,5 @@ for i in range(len(n)):
     cnt += 1
 
 avg = 0.0
-avg = hap // cnt
-print(hap, avg, end=' ')
+avg = hap / cnt
+print(hap, {:.2f}.format(avg), end=' ')
