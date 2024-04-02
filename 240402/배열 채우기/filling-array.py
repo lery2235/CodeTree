@@ -3,7 +3,7 @@ res = [0] * len(arr)
 for i in range(len(arr)):
     if 0 in arr:
         if arr[i] == 0:
-            res[0:i] = reversed(arr[0:i])
+            res[:len(res)] = reversed(arr[:-1])
             break
         else:
             continue    
