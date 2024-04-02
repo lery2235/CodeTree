@@ -1,5 +1,8 @@
 arr = list(map(int, input().split()))
+res = [0] * len(arr)
+for i in range(len(arr)):
+    if arr[i] == 0:
+        res[:i+1] = reversed(arr[:i])
 
-for i in range(len(arr)-1, -1, -1):
-    if arr[i] != 0:
-        print(arr[i], end=' ')
+for i in res:
+    print(i, end =' ')
