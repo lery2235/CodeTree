@@ -1,29 +1,31 @@
-import sys 
+n, m = tuple(map(int, input().split()))
 
-n, m = map(int, input().split())
+dx, dy = [0, 1, 0, -1], [1, 0, -1, 0]
+board = [
+    [0] * n 
+    for _ in range(n)
+]
 
-dx, dy = [0, 0, -1, 1], [1, -1, 0, 0]
-board = [[0] * (n + 1) for _ in range(n + 1)]
+def in_range(x, y):
+    return 0 <= x and x < n and 0 <= y and y < n
 
 def check_color(r, c):
-    if board[r][c] != 1:
-        board[r][c] = 1
-    else:
-        return 0
     cnt = 0
     for i in range(4):
         nx = r + dx[i]
         ny = c + dy[i]
-        if 0 <= nx < n and 0 <= ny < n and board[nx][ny] == 1:
+        if in_range(nx, ny) and board[nx][ny] == 1:
             cnt += 1
-    if cnt >= 3:
-        return 1
-    else:
-        return 0
+
+        return cnt
 
 for i in range(m):
-    r, c = map(int, input().split())
-    if 0 < r <= n and 0 < c <= n:
-        print(check_color(r-1, c-1))
+    r, c = tuple(map(int, input().split()))
+    r -= 1
+    c -= 1
+    board[r][c] = 1
+    
+    if check_color(r, c) == 3:
+        print(1)
     else:
         print(0)
