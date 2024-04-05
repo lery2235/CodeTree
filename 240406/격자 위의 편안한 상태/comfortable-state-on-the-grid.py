@@ -23,4 +23,7 @@ def check_color(r, c):
 
 for i in range(m):
     r, c = map(int, input().split())
-    print(check_color(r-1, c-1))
+    if 0 < r <= n and 0 < c <= n:
+        print(check_color(r-1, c-1))
+    else:
+        print(0)
